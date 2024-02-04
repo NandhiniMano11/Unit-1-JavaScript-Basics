@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Example</title>
+  <style>
+    .button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HTML button element -->
+<button id="myButton" class="button">Click Me!</button>
+
+<script>
+  // Select the button element by its ID
+  const button = document.getElementById('myButton');
+
+  // Add an event listener to the button for the 'click' event
+  button.addEventListener('click', function() {
+    // This function will be executed when the button is clicked
+    console.log('Button clicked!');
+    alert('Button clicked!'); // Show an alert box
+  });
+</script>
+
+</body>
+</html>
